@@ -20,26 +20,6 @@
     "hashtags": ["#health", "#lifestyle", "#fitness"]
   },
   {
-    "id": 3,
-    "cover": "https://images.unsplash.com/photo-1581091012184-7f3c8c64b4de",
-    "title": "Top 10 Coding Practices",
-    "author": "Sarah Lee",
-    "author_img": "https://randomuser.me/api/portraits/women/3.jpg",
-    "posted_date": "2025-06-14",
-    "reading_time": 8,
-    "hashtags": ["#coding", "#javascript", "#webdev"]
-  },
-  {
-    "id": 4,
-    "cover": "https://images.unsplash.com/photo-1551033406-611cf9a28f4c",
-    "title": "Mastering the Art of Coffee",
-    "author": "Carlos Brown",
-    "author_img": "https://randomuser.me/api/portraits/men/4.jpg",
-    "posted_date": "2025-06-15",
-    "reading_time": 4,
-    "hashtags": ["#coffee", "#lifestyle", "#morning"]
-  },
-  {
     "id": 5,
     "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
     "title": "The Power of Minimalism",
@@ -48,46 +28,6 @@
     "posted_date": "2025-06-16",
     "reading_time": 5,
     "hashtags": ["#minimalism", "#design", "#lifestyle"]
-  },
-  {
-    "id": 6,
-    "cover": "https://images.unsplash.com/photo-1517817748491-46f82f6e8273",
-    "title": "Beginner's Guide to Photography",
-    "author": "Tom Harris",
-    "author_img": "https://randomuser.me/api/portraits/men/6.jpg",
-    "posted_date": "2025-06-17",
-    "reading_time": 7,
-    "hashtags": ["#photography", "#camera", "#beginner"]
-  },
-  {
-    "id": 7,
-    "cover": "https://images.unsplash.com/photo-1586281380349-632531db7a97",
-    "title": "How to Meditate Effectively",
-    "author": "Luna Taylor",
-    "author_img": "https://randomuser.me/api/portraits/women/7.jpg",
-    "posted_date": "2025-06-18",
-    "reading_time": 6,
-    "hashtags": ["#mindfulness", "#meditation", "#selfcare"]
-  },
-  {
-    "id": 8,
-    "cover": "https://images.unsplash.com/photo-1602810316767-6f21098b9ff7",
-    "title": "Future of Artificial Intelligence",
-    "author": "David Kim",
-    "author_img": "https://randomuser.me/api/portraits/men/8.jpg",
-    "posted_date": "2025-06-20",
-    "reading_time": 10,
-    "hashtags": ["#AI", "#technology", "#future"]
-  },
-  {
-    "id": 9,
-    "cover": "https://images.unsplash.com/photo-1599491444553-0c2ed35616a9",
-    "title": "Urban Gardening Tips",
-    "author": "Sophia Martinez",
-    "author_img": "https://randomuser.me/api/portraits/women/9.jpg",
-    "posted_date": "2025-06-22",
-    "reading_time": 5,
-    "hashtags": ["#gardening", "#urbanlife", "#green"]
   },
   {
     "id": 10,
@@ -108,16 +48,6 @@
     "posted_date": "2025-06-25",
     "reading_time": 9,
     "hashtags": ["#reactjs", "#frontend", "#webdev"]
-  },
-  {
-    "id": 12,
-    "cover": "https://images.unsplash.com/photo-1581090700227-4c4c79b73621",
-    "title": "Top 5 Travel Destinations",
-    "author": "Owen Scott",
-    "author_img": "https://randomuser.me/api/portraits/men/12.jpg",
-    "posted_date": "2025-06-26",
-    "reading_time": 7,
-    "hashtags": ["#travel", "#explore", "#wanderlust"]
   },
   {
     "id": 13,
@@ -148,55 +78,5 @@
     "posted_date": "2025-06-29",
     "reading_time": 5,
     "hashtags": ["#vegan", "#recipe", "#foodie"]
-  },
-  {
-    "id": 16,
-    "cover": "https://images.unsplash.com/photo-1606761568499-d9e532e99a1b",
-    "title": "Tips for Better Sleep",
-    "author": "Ethan Brooks",
-    "author_img": "https://randomuser.me/api/portraits/men/16.jpg",
-    "posted_date": "2025-07-01",
-    "reading_time": 4,
-    "hashtags": ["#sleep", "#wellness", "#lifestyle"]
-  },
-  {
-    "id": 17,
-    "cover": "https://images.unsplash.com/photo-1564869734235-6585f0d36a10",
-    "title": "Digital Art on the Rise",
-    "author": "Grace Bennett",
-    "author_img": "https://randomuser.me/api/portraits/women/17.jpg",
-    "posted_date": "2025-07-02",
-    "reading_time": 6,
-    "hashtags": ["#digitalart", "#creativity", "#technology"]
-  },
-  {
-    "id": 18,
-    "cover": "https://images.unsplash.com/photo-1580894908361-967195033a44",
-    "title": "How to Build a Personal Brand",
-    "author": "Noah Carter",
-    "author_img": "https://randomuser.me/api/portraits/men/18.jpg",
-    "posted_date": "2025-07-03",
-    "reading_time": 7,
-    "hashtags": ["#branding", "#career", "#marketing"]
-  },
-  {
-    "id": 19,
-    "cover": "https://images.unsplash.com/photo-1612831455543-0ec1cbeb8b9c",
-    "title": "Yoga for Beginners",
-    "author": "Layla Foster",
-    "author_img": "https://randomuser.me/api/portraits/women/19.jpg",
-    "posted_date": "2025-07-04",
-    "reading_time": 5,
-    "hashtags": ["#yoga", "#fitness", "#selfcare"]
-  },
-  {
-    "id": 20,
-    "cover": "https://images.unsplash.com/photo-1610397211373-d363e9135c81",
-    "title": "Mastering Public Speaking",
-    "author": "Lucas Gray",
-    "author_img": "https://randomuser.me/api/portraits/men/20.jpg",
-    "posted_date": "2025-07-05",
-    "reading_time": 8,
-    "hashtags": ["#publicspeaking", "#communication", "#confidence"]
   }
 ]

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
+import Blog from './blog/Blog';
 
-const Blogs = () => {
+const Blogs = ({ handleReadTime }) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() => {
@@ -9,11 +10,18 @@ const Blogs = () => {
             .then(data => setBlogs(data))
     }, [])
 
-    console.log(blogs);
-
     return (
-        <section>
-
+        <section className="w-[65%]">
+            {blogs.length === 0 ? (
+                <section className="flex flex-col items-center justify-center py-10">
+                    <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-blue-500"></div>
+                    <p className="mt-4 text-sm font-medium text-blue-600">Loading blogs...</p>
+                </section>
+            ) : (
+                blogs.map(blog => (
+                    <Blog key={blog?.id} blog={blog} handleReadTime={handleReadTime}></Blog>
+                ))
+            )}
         </section>
     );
 };
