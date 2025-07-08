@@ -1,9 +1,13 @@
+import Blogs from "./components/blogs/Blogs";
+import Header from "./components/header/Header";
 
 const App = () => {
   return (
-    <div>
-      <h1 class="text-4xl font-bold">Hello There!</h1>
-    </div>
+    <section className="max-w-[1440px] mx-auto">
+      <Header></Header>
+
+      <Blogs></Blogs>
+    </section>
   );
 };
 
