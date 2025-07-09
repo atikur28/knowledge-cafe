@@ -1,12 +1,46 @@
-# React + Vite
+# 🧠 Knowledge Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and interactive blog reading interface built with **React.js**, featuring real-time reading time tracking, bookmarking, and smooth user experience. The project focuses on enhancing reading productivity and managing blog content efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Site
 
-## Expanding the ESLint configuration
+🔗 [Visit Live Website](https://knowledge-cafe-pi.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Replace the above link with your actual Vercel deployed URL after deployment.
+
+---
+
+## 📚 Project Overview
+
+Knowledge Cafe is a React-based application that allows users to:
+
+- Browse blogs fetched from a `blogs.json` file.
+- **Mark blogs as read** — with time spent on reading tracked live.
+- **Bookmark blogs** — view all bookmarked blogs in a dedicated section.
+- Receive **toast notifications** for duplicate actions (e.g., re-bookmarking or re-reading).
+- Responsive design for both desktop and mobile views.
+
+---
+
+## 🚀 Features
+
+- 📖 **Read Time Tracker** – Accumulates total time spent on reading blogs.
+- 📌 **Bookmarking System** – Saves favorite blogs with a clean UI.
+- 🔔 **Toast Notifications** – Warns if a blog is already read or bookmarked.
+- 🌀 **Loading Spinner** – Shows while blogs are being fetched.
+- 💻 **Responsive Layout** – Built with Tailwind CSS and mobile-first responsiveness.
+- 🎨 **Modern UI** – Beautiful design using clean color palette and fonts.
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **Tailwind CSS**
+- **React Router (Link Component)**
+- **Vite (Optional depending on setup)**
+- **Vercel** (For Deployment)
+
+---
