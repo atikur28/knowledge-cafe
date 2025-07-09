@@ -11,7 +11,7 @@ const Blogs = ({ handleReadTime }) => {
     }, [])
 
     return (
-        <section className="w-[65%]">
+        <section className="lg:w-[65%]">
             {blogs.length === 0 ? (
                 <section className="flex flex-col items-center justify-center py-10">
                     <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-blue-500"></div>

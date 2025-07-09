@@ -28,23 +28,23 @@ const App = () => {
 
       <Header />
 
-      <section className="flex gap-5 mx-3 md:mx-10 mt-5">
+      <section className="flex flex-col lg:flex-row gap-5 mx-3 md:mx-10 mt-5">
         {/* Part 1 */}
         <Blogs handleReadTime={handleReadTime} />
 
         {/* Part 2 */}
-        <section className="w-[35%]">
+        <section className="lg:w-[35%]">
           <h4 className="text-[#6951ed] text-xl font-semibold text-center border-2 border-[#6951ed] rounded-lg py-4 hover:bg-[#efedfd] cursor-pointer">
             Spent time on read: {totalReadTime} min
           </h4>
 
           <div className="py-4 px-5 bg-gray-100 rounded-lg mt-5">
-            <h4 className="text-xl font-semibold">Bookmarked Blogs : {bookmarked.length}</h4>
+            <h4 className="text-lg md:text-xl font-semibold">Bookmarked Blogs : {bookmarked.length}</h4>
             <div>
               {bookmarked.map((bookmark) => (
                 <h4
                   key={bookmark.id}
-                  className="py-4 px-5 bg-white text-lg font-semibold rounded-lg my-3"
+                  className="py-4 px-5 bg-white md:text-lg font-semibold rounded-lg my-3"
                 >
                   {bookmark?.title}
                 </h4>
