@@ -1,6 +1,6 @@
 import Bookmark from '../../../assets/images/icons8-bookmark.svg';
 
-const Blog = ({ blog, handleReadTime }) => {
+const Blog = ({ blog, handleReadTime, handleBookMarked }) => {
     const { cover, author_img, author, posted_date, reading_time, title, hashtags, } = blog || {};
 
     return (
@@ -20,7 +20,7 @@ const Blog = ({ blog, handleReadTime }) => {
                         src={Bookmark}
                         alt="Bookmark"
                         className="w-[20px] md:w-[30px] cursor-pointer transition-transform duration-300 hover:scale-110 hover:rotate-6"
-                        onClick={() => handleReadTime(blog)}
+                        onClick={() => handleBookMarked(blog)}
                     />
                 </div>
             </section>
@@ -35,7 +35,8 @@ const Blog = ({ blog, handleReadTime }) => {
                 onMouseEnter={(e) =>
                     (e.currentTarget.style.textShadow = '2px 2px 6px rgba(96, 71, 236, 0.5)')
                 }
-                onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')}>Mark as read</p>
+                onMouseLeave={(e) => (e.currentTarget.style.textShadow = 'none')} 
+                onClick={() => handleReadTime(blog)}>Mark as read</p>
             <hr className="text-gray-200" />
         </section>
     );

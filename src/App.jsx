@@ -3,14 +3,25 @@ import Header from "./components/header/Header";
 import { useState } from 'react';
 
 const App = () => {
+  const [readBlogs, setReadBlogs] = useState([]);
   const [totalReadTime, setTotalReadTime] = useState(0);
   const [bookmarked, setBookmarked] = useState([]);
   const [toastMessage, setToastMessage] = useState('');
 
   const handleReadTime = (blog) => {
+    const isAlreadyRead = readBlogs.includes(blog.id);
+    if (!isAlreadyRead) {
+      setTotalReadTime(prevTime => prevTime + blog.reading_time);
+      setReadBlogs(prev => [...prev, blog.id]);
+    } else {
+      setToastMessage('⚠️ Blog is already read!');
+      setTimeout(() => setToastMessage(''), 3000);
+    }
+  }
+
+  const handleBookMarked = (blog) => {
     const isAlreadyBookmarked = bookmarked.some(b => b.id === blog.id);
     if (!isAlreadyBookmarked) {
-      setTotalReadTime(prevTime => prevTime + blog?.reading_time);
       setBookmarked(prev => [...prev, blog]);
     } else {
       setToastMessage('⚠️ Blog is already bookmarked!');
@@ -30,7 +41,7 @@ const App = () => {
 
       <section className="flex flex-col lg:flex-row gap-5 mx-3 md:mx-10 mt-5">
         {/* Part 1 */}
-        <Blogs handleReadTime={handleReadTime} />
+        <Blogs handleReadTime={handleReadTime} handleBookMarked={handleBookMarked} />
 
         {/* Part 2 */}
         <section className="lg:w-[35%]">
